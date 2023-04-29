@@ -1,15 +1,24 @@
 import React from "react";
 import { ButtonSecondary } from "./Buttons";
+import Image from "next/image";
 
 export default function Banner() {
   return (
-    <section class="relative px-10 md:p-0  hover:shadow-2xl cursor-pointer bg-[url(/assets/image/pexels-frans-van-heerden-624063.jpg)] h-screen bg-no-repeat bg-fixed bg-cover bg-center">
-      <div class="absolute inset-0 bg-zinc-950/75 "></div>
-      <div class="relative mx-auto py-32 flex h-screen items-center justify-center content-center ">
+    <section class="relative px-10 md:p-0  hover:shadow-2xl cursor-pointer h-screen ">
+      <div class="absolute inset-0 bg-zinc-950/75 z-10"></div>
+      <div class="absolute inset-0 w-full h-full">
+        <Image
+          className="max-w-none object-cover"
+          src="/assets/images/pexels-frans-van-heerden-624063.jpg"
+          alt=""
+          fill
+        />
+      </div>
+      <div class="relative mx-auto py-32 flex h-screen items-center justify-center content-center z-20">
         <div class="max-w-xl text-center ">
-          <h1 class="text-3xl text-white font-extrabold sm:text-5xl">
+          <h1 class="font-title text-3xl text-white font-extrabold sm:text-5xl leading-normal tracking-wider">
             Discover
-            <strong class="block font-extrabold text-cyan-700">
+            <strong class="font-titleItalic block font-extrabold text-brandGreen">
               Wild Africa.
             </strong>
           </h1>

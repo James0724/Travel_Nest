@@ -9,7 +9,21 @@ module.exports = {
     extend: {
       maxHeight: {
         125: "30rem",
+        130: "32rem",
       },
+      colors: {
+        brandGreen: "#283a2c",
+        black: "#000",
+        transparent: "transparent",
+      },
+    },
+
+    fontFamily: {
+      sans: ["ui-sans-serif", "system-ui"],
+      serif: ["ui-serif", "Georgia"],
+      mono: ["ui-monospace", "SFMono-Regular"],
+      title: ["Wulkan Display Medium"],
+      titleItalic: ["Wulkan Display Regular Italic"],
     },
   },
   plugins: [],

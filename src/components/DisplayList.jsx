@@ -2,7 +2,7 @@ import React from "react";
 
 export default function DisplayList() {
   return (
-    <div class="relative -top-10 ">
+    <div class="relative -top-10 z-10">
       <div class="bg-white shadow-xl rounded-lg overflow-x-auto w-full flex space-x-2 px-4 py-4">
         <div>
           <div class="flex items-center w-80">

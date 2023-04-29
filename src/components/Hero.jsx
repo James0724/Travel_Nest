@@ -1,37 +1,36 @@
 import React from "react";
+import { ButtonPrimary, ButtonSecondary } from "./Buttons";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen relative bg-[url('/assets/image/hero.jpg')] bg-cover bg-center bg-no-repeat ">
-      <div className="absolute inset-0 bg-gradient-to-r from-amber-800/95 to-amber-700/5"></div>
+    <section className=" relative min-h-screen  ">
+      <div className="absolute inset-0 bg-gradient-to-r from-brandGreen to-transparent z-10"></div>
+      <div class="-z-0">
+        <Image
+          className="max-w-none object-cover"
+          src="/assets/images/hero.jpg"
+          alt=""
+          fill
+        />
+      </div>
 
-      <div className="relative flex flex-col my-auto max-w-xl justify-center lg:pl-16 px-4 h-screen">
-        <h1 className="text-white text-3xl font-extrabold sm:text-5xl">
+      <div className="flex flex-col max-w-xl justify-center lg:pl-16 px-4 h-screen">
+        <h1 className=" leading-normal font-title  tracking-widest text-white text-3xl font-extrabold sm:text-5xl z-10">
           Let us find your
-          <strong className="block font-extrabold text-cyan-950">
+          <strong className="font-titleItalic  block font-extrabold text-orange-500">
             Memorable Safari.
           </strong>
         </h1>
 
-        <p className="mt-4 max-w-lg sm:text-xsl/relaxed text-white">
+        <p className="mt-4 max-w-lg sm:text-xsl/relaxed z-10 font-bold text-white tracking-wider">
           Journey through a collection of world's most picturesque destinations
           with divine travel nest safaris
         </p>
 
-        <div className="mt-8 flex gap-4">
-          <a
-            href="#"
-            className="block w-1/2  bg-cyan-950 px-12 py-3 text-sm font-medium text-white shadow hover:bg-cyan-700 focus:outline-none focus:ring active:bg-cyan-500 "
-          >
-            About Us
-          </a>
-
-          <a
-            href="#"
-            className="block w-1/2  bg-white px-12 py-3 text-sm font-medium text-cyan-600 shadow hover:text-cyan-700 focus:outline-none focus:ring active:text-cyan-500 "
-          >
-            Enquiries
-          </a>
+        <div className="mt-8 flex gap-4 z-10">
+          <ButtonSecondary Text={"About Us"} />
+          <ButtonPrimary Text={"Enquiry "} />
         </div>
       </div>
     </section>

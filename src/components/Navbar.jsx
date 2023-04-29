@@ -5,8 +5,8 @@ export default function Navbar() {
   return (
     <>
       <div class="flex flex-wrap place-items-center">
-        <section class="fixed top-0 left-0 right-0 mx-auto z-30">
-          <nav class="flex justify-between bg-cyan-950 text-white w-screen">
+        <section class=" mx-auto z-30">
+          <nav class="flex justify-between bg-brandGreen text-white w-screen">
             <div class="px-5 xl:px-12 py-2 flex w-full items-center">
               <a class="max-h-25 overflow-hidden" href="#">
                 <Image
